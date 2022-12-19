@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tomcat-java-deployment
-        image: us-central1-docker.pkg.dev/priyankaproject-365917/myrepo:COMMIT_SHA
+        image: us-central1-docker.pkg.dev/$PROJECT_ID/myrepo/newrepo:COMMIT_SHA
         ports:
         - containerPort: 8080
         resources:
