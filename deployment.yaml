@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: tomcat-java-deployment
-        image: gcr.io/souviks-world/docker-tomcatjavacicd:<VERSION>
+        image: asia-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/my-repo/2ndrepo:COMMIT_SHA
         ports:
         - containerPort: 8080
         resources:
