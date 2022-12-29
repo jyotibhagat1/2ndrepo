@@ -17,5 +17,12 @@ spec:
         image: us-central1-docker.pkg.dev/valued-geode-345108/myrepo/newimg:COMMIT_SHA
         ports:
         - containerPort: 8080
+        resources:
+          # You must specify requests for CPU to autoscale
+          # based on CPU utilization
+          limits:
+            cpu: 800m
+          requests:
+            cpu: 400m
         
           
